@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('fonts/SFUIDisplay-Regular.eot');
+    src: url('fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('fonts/SFUIDisplay-Regular.ttf') format('truetype'),
+        url('fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('fonts/SFUIDisplay-Medium.eot');
+    src: url('fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+        url('fonts/SFUIDisplay-Medium.woff') format('woff'),
+        url('fonts/SFUIDisplay-Medium.ttf') format('truetype'),
+        url('fonts/SFUIDisplay-Medium.svg#SFUIDisplay-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('fonts/SFUIDisplay-Semibold.eot');
+    src: url('fonts/SFUIDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/SFUIDisplay-Semibold.woff2') format('woff2'),
+        url('fonts/SFUIDisplay-Semibold.woff') format('woff'),
+        url('fonts/SFUIDisplay-Semibold.ttf') format('truetype'),
+        url('fonts/SFUIDisplay-Semibold.svg#SFUIDisplay-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  font-family: "SF UI Display", sans-serif;
+}
+
+                    /* контейнер для шампуней */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+                   /* контейнер для шампуней */
+
+                   /* боксы для шампуней */
+
+
+.container .item{
+  width: 573px;
+  height: 707px;
+  background-color: #F8FAFC;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-top: 36px;
+  margin-left: 34px;
+  transition: 0.3s;
+}
+.hover{
+  box-shadow: 0px 4px 45px #C3D4E4
+}
+.container .item .image{
+  width: 256px;
+  height: 261px;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  transition: 1.2s;
+}
+                                   /* боксы для шампуней */
+
+                                   /* бокс с шампунем la roche */
+.container .item .oil{
+  background: url(images/moil.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.oil_2{
+  background: url(images/moil_2.svg)!important;
+}
+
+                 /* бокс с шампунем la roche */
+
+
+                 /* бокс с шампунем pantene */
+
+.container .item .pantene{
+  background: url(images/pantene.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+.pantene_2{
+  background: url(images/pantene_2.svg)!important;
+}
+
+               /* бокс с шампунем pantene */ 
+               
+               
+               /* бокс с шампунем concept */
+.container .item .concept{
+  background: url(images/concept.svg);
+}
+.concept_2{
+  background: url(images/concept_2.svg)!important;
+}
+
+                /* бокс с шампунем concept */
+
+
+                /* общие стили для всех боксов с шампунями */
+
+                    /* 1 ряд */
+.container .item .row_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .item .new{
+  width: 71px;
+  height:26px;
+  background: linear-gradient(248.16deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px; 
+  text-align: center;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.container .item .weights{
+  width: 46px;
+  height: 47px;
+  background-image: url(images/weights.svg);
+  background-repeat: no-repeat;
+  background-color:#fff;
+  background-position: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container .item .weights:hover{
+  background-color: #F9FAFC;
+}
+
+.ready{
+  background-image: url(images/ready.svg)!important;
+  background-position: center;  
+  background-color: rgba(0, 52, 102, 0.02)!important;
+  border: 0.2px solid rgba(0, 52, 102, 0.02);
+}
+                         
+                             /* 1 ряд */
+
+                             /* 2 ряд */
+
+.container .item .row_2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 46px;
+  margin-top: 25px;
+}
+
+.container .item .row_2 h2{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;     
+  color: #2C2C2C;
+  align-self:center;
+  margin-bottom: 10px;
+}
+.container .item .row_2 p{
+  width: 483px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2C2C2C;
+}
+
+                          /* 2 ряд */
+
+                          /* 3 ряд */
+
+.container .item .row_3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container .item .row_3 .select{
+  width: 258px;
+  height: 30px;
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+
+.container .item .row_3 .colors{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 30px;
+  display: block;
+  background: #fff;
+  border-radius: 30px;
+  line-height: 30px;
+  text-indent: 20px;
+  background-image: url(images/list.svg);
+  background-repeat: no-repeat;
+  background-position: left 232px  top 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #2C2C2C;
+  transition: 0.5s;
+}
+
+.modify{
+  border-bottom-left-radius: 0px!important;
+  border-bottom-right-radius: 0px!important;
+  background-image: url(images/list_2.svg)!important;
+}
+
+
+.container .item .row_3 .price{
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.container .item .row_3 ul{
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  overflow: auto;
+  top: 30px;
+  left: 0px;
+  background-color: #fff;
+  list-style: none;
+  transition: 0.5s;
+}
+
+.show-colors{
+  height: 100px!important;
+}
+
+ul::-webkit-scrollbar{
+  width: 3px;
+  border-radius: 15px;
+  padding-right: 5px;
+}
+ul::-webkit-scrollbar-track{
+ background: #E0E9F2;
+ box-shadow: 0px 0px 2px 2px #e5e9ee;
+}
+ul::-webkit-scrollbar-thumb{
+ background:#fff;
+ height: 20px;
+}
+.container .item .row_3 ul li{
+ padding: 5px;
+ padding-left: 20px;
+ padding-right: 170px;
+ border-radius: 0px 10px 10px 0px;
+ margin-right: 15px;
+}
+.container .item .row_3 ul li:hover{
+  background-color: #F3F8FC;
+}
+
+                           /* 3 ряд */
+
+                          /* 4 ряд */
+
+.container .item .row_4{
+  margin-left: 68px;
+  margin-top: 16px;
+}
+
+.container .item .row_4 .volume_block{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 11px;
+  align-items: center;
+}
+.container .item .row_4 .check-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.container .item .row_4 label{
+  width: 17px;
+  height: 17px;
+  border: 5.54px solid #DEDEDE;
+  background-color: #DEDEDE;
+  border-radius: 5px;
+  transition: 0.2s; 
+}
+.container .item .row_4 label .inner{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.container .item .row_4 input{
+  display: none;
+}
+
+.container .item .row_4 input:checked + label .inner{
+  background-image: linear-gradient(261.65deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+}
+.container .item .row_4 article{
+  margin-left: 13px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+                             /* 4 ряд */
+
+
+                             /* 5 ряд */
+.container .item .row_5{
+  display: flex;
+  flex-direction: row;
+  margin-left: 62px;
+  margin-top: 25px;
+}
+.container .item .row_5 .change_count{
+  display: flex;
+  flex-direction: row;
+  width: 92px;
+  height: 39px;
+  background: #E2E9F0;
+  border-radius: 30px;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container .item .row_5 .change_count:hover{
+  background: #D8E3EE;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .item .row_5 .buy{
+  width: 302px;
+  height: 39px;
+  background: linear-gradient(221.35deg, #EFBB37 -3.95%, #CF9E1F 109.44%);
+  border-radius: 30px;
+  margin-left: 31px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.container .item .row_5 .buy:hover{
+  background-image: linear-gradient(221.35deg, #E9B32C -3.95%, #BF911A 109.44%);
+}
+
+.container .item .row_5 .buy.btn_active{
+  background: linear-gradient(221.35deg, #FFD773 -3.95%, #E2B645 109.44%)!important;
+}
+
+.minus,
+.plus,
+label{
+  cursor: pointer;
+}
+                                     /* 5 ряд */
+
+                         /* общие стили для всех боксов с шампунями */
+
+
+
+
+
